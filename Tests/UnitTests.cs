@@ -56,27 +56,27 @@ namespace GithubActionsLab
         }
         // Multiply Tests- Done
         [Test]
-        public void Mulitply_Valid()
+        public void Multiply_Valid()
         {
-            Assert.AreEqual(2, Program.Mulitply("1", "2"));
-            Assert.AreEqual(6, Program.Mulitply("3", "2"));
-            Assert.AreEqual(35, Program.Mulitply("5", "7"));
+            Assert.AreEqual(2, Program.Multiply("1", "2"));
+            Assert.AreEqual(6, Program.Multiply("3", "2"));
+            Assert.AreEqual(35, Program.Multiply("5", "7"));
         }
 
         [Test]
-        public void Mulitply_Invalid()
+        public void Multiply_Invalid()
         {
-            Assert.Throws<FormatException>(() => Program.Mulitply("1", "a"));
-            Assert.Throws<FormatException>(() => Program.Mulitply("a", "1"));
-            Assert.Throws<FormatException>(() => Program.Mulitply("a", "a"));
+            Assert.Throws<FormatException>(() => Program.Multiply("1", "a"));
+            Assert.Throws<FormatException>(() => Program.Multiply("a", "1"));
+            Assert.Throws<FormatException>(() => Program.Multiply("a", "a"));
         }
 
         [Test]
-        public void Mulitply_Null()
+        public void Multiply_Null()
         {
-            Assert.Throws<ArgumentNullException>(() => Program.Mulitply("1", null));
-            Assert.Throws<ArgumentNullException>(() => Program.Mulitply(null, "1"));
-            Assert.Throws<ArgumentNullException>(() => Program.Mulitply(null, null));
+            Assert.Throws<ArgumentNullException>(() => Program.Multiply("1", null));
+            Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, "1"));
+            Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, null));
         }
         // Divide Tests- Done
         [Test]
