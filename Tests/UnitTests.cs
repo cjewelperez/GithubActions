@@ -108,8 +108,7 @@ namespace GithubActionsLab
         {
             Assert.AreEqual(1, Program.Power("1", "2"));
             Assert.AreEqual(8, Program.Power("2", "3"));
-            //Should Fail
-            Assert.AreEqual(12, Program.Power("5", "7"));
+            Assert.AreEqual(25, Program.Power("5", "2"));
         }
 
         [Test]
